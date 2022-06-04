@@ -1,0 +1,29 @@
+POST http://localhost:3001/products
+content-type: application/json
+
+{
+    "name": "caderno",
+    "price": 12
+}
+
+###
+
+GET http://localhost:3001/products
+
+###
+
+GET http://localhost:3001/products/68e3c95f-77c1-4f54-bbc0-ec621915d47c
+
+###
+
+PUT http://localhost:3001/products/325f61f4-3823-4dfe-bef1-1c49f46a9c4e
+content-type: application/json
+
+{
+    "name": "caderno promocao",
+    "price": 10
+}
+
+###
+
+DELETE http://localhost:3001/products/325f61f4-3823-4dfe-bef1-1c49f46a9c4e
